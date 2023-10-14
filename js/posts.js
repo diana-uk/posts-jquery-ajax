@@ -1,5 +1,5 @@
 const posts = function () {
-    const showMessage = (message, elementId, elementClassName) => {        
+    const showMessage = (message, elementId, elementClassName = '') => {       
         $('#id-posts-container').html(`<div id="${elementId}" class="${elementClassName}">${message}</div>`);
     };
 
@@ -12,7 +12,7 @@ const posts = function () {
             success: function (data) {
                 $('#id-posts-container').empty();
                 if(data.length === 0) {
-                    // TODO present error in ui
+                    showMessage('No data found.', MESSAGE_ID.generalMessage);
                     console.log('No data found.');
                     // No data to present
                     return;

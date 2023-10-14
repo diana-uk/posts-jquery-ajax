@@ -3,5 +3,6 @@ const CLASS_NAMES = {
 }
 
 const MESSAGE_ID = {
-    errorIdMessage: 'id-error-message'
+    errorIdMessage: 'id-error-message',
+    generalMessage: 'id-general-message'
 }
