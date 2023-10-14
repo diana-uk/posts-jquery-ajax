@@ -1,0 +1,32 @@
+#id-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px;
+    justify-content: center;
+}
+#id-posts-container div {
+    background-color: white;
+    margin: 5px;
+    /*** Just to center the text ***/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the counter cards */
+.c-post-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  .c-post-card p {
+    margin-top: 0;
+  }
+
+  .c-error-text {
+    color: red;
+  }
